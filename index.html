@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center flex-col gap-6">
+    <h2 class="text-3xl font-bold text-gray-800 text-center mt-20">Number Guessing Game</h2>
+    <p>Pick a number between 1 and 10</p>
+    <input id="user-guess-input" placeholder="Enter the number" class="w-96 p-2 rounded shadow border border-gray-500">
+    <p class="flex gap-10">
+    <button id="guess-button" class="px-4 py-2 rounded shadow text-white bg-blue-400 hover:bg-blue-600" onclick="guess()">Guess</button>
+    <button id="replay-button" class="px-4 py-2 rounded shadow text-white bg-green-400 hover:bg-green-600" onclick="replay()" disabled>Replay</button>
+    </p>
+    <p>
+        <span id="result"></span>
+    </p>
+    <script src="./index.js"></script>
+</body>
+</html>
